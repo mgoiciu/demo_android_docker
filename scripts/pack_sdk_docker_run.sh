@@ -2,7 +2,7 @@
 set -xeuo pipefail
 
 docker run \
-	-it --rm \
+	-i --rm \
 	-v "$PWD":/application \
 	packsdkandroiddocker.image \
     sh -c "$@"
